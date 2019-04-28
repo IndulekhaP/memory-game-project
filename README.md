@@ -1,13 +1,11 @@
 # Memory game project
+The game randomly shuffles the cards. A user wins once all cards have successfully been matched.
 
 ## Built With
 * HTML5
 * CSS3
 * JavaScript
 * Bootstrap
-
-## Memory game
-The game randomly shuffles the cards. A user wins once all cards have successfully been matched.
 
 ## Features
 * **Congratulations Popup:**
