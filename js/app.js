@@ -1,3 +1,4 @@
+"use strict";
 /*
  * List that holds all cards
  */
@@ -70,7 +71,7 @@ const cards = [
 
 
 const deck = document.getElementsByClassName('deck')[0];
-let openCards = [], moveCount = 0, totalSeconds = 0;
+let openCards = [], moveCount = 0, totalSeconds = 0, timer;
 
  //Start the game on page load
 document.addEventListener('DOMContentLoaded', function(){
@@ -215,7 +216,7 @@ function adjustStars(){
 
 function win(){
 	clearInterval(timer);
-	document.getElementsByClassName('game-details')[0].innerText = `With ` + moveCount + ` moves and ` + document.getElementsByClassName('fa-star').length + ` stars.
+	document.getElementsByClassName('game-details')[0].innerText = `With ` + moveCount + ` moves and ` + document.getElementsByClassName('fa-star').length + ` stars in ` + document.getElementsByClassName('time')[0].innerText + `.
 	Woooooo!`;
 	$('#myModal').modal('show');
 }
